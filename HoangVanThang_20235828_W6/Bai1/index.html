@@ -39,10 +39,18 @@
                 <input type="text" id="searchInput" placeholder="Tìm kiếm bánh mì...">
                 <button id="searchBtn">Tìm</button>
             </div>
+            <div class="price-filters">
+                <input type="number" id="minPrice" placeholder="Giá từ (vd: 10000)">
+                <input type="number" id="maxPrice" placeholder="Giá đến (vd: 30000)">
+            </div>
+            <div class="sort-controls">
+                <button id="sortPriceAsc">Giá tăng dần</button>
+                <button id="sortPriceDesc">Giá giảm dần</button>
+            </div>
             <button id="addProductBtn" class="add-product-btn">Thêm sản phẩm mới</button>
         </section>
 
-        <section class="form-section-container hidden" id="addProductFormContainer">
+        <section class="form-section-container" id="addProductFormContainer">
             <form id="addProductForm">
                 <h3>Thêm sản phẩm mới</h3>
                 <div>
@@ -66,30 +74,9 @@
         </section>
 
         <!-- Thành phần chứa danh sách sản phẩm -->
-        <section id="product-list">
+        <section id="product-list-container">
             <h2>Sản phẩm của chúng tôi</h2>
-            <!-- <article> đại diện cho một khối nội dung độc lập, có thể tự đứng riêng -->
-            <div class="product-list">
-                <article class="product-item">
-                    <img src="https://placehold.co/300x200?text=Banh+Mi+Thit" alt="Bánh mì thịt nướng">
-                    <h3>Bánh mì thịt nướng</h3>
-                    <p>Bánh mì truyền thống với thịt nướng thơm lừng, pate, dưa leo và rau thơm.</p>
-                    <p class="price">Giá: 25.000 VNĐ</p>
-                </article>
-
-                <article class="product-item">
-                    <img src="https://placehold.co/300x200?text=Banh+Mi+Op+La" alt="Bánh mì ốp la">
-                    <h3>Bánh mì ốp la</h3>
-                    <p>Hai trứng ốp la lòng đào, ăn kèm xì dầu, tương ớt và bánh mì nóng.</p>
-                    <p class="price">Giá: 20.000 VNĐ</p>
-                </article>
-
-                <article class="product-item">
-                    <img src="https://placehold.co/300x200?text=Banh+Mi+Chao" alt="Bánh mì chảo">
-                    <h3>Bánh mì chảo</h3>
-                    <p>Một phần ăn đầy đặn với pate, xúc xích, trứng và xíu mại trên chảo gang.</p>
-                    <p class="price">Giá: 35.000 VNĐ</p>
-                </article>
+            <div class="product-list" id="product-list">
             </div>
         </section>
 

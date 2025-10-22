@@ -1,0 +1,241 @@
+/* Đặt style chung cho toàn trang */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font chữ */
+    line-height: 1.6; /* Chiều cao dòng */
+    margin: 0;
+    padding: 0;
+    background-color: #FFFBF7; /* Màu nền */
+    color: #4A2E2A; /* Màu chữ */
+}
+
+header {
+    background: #EED6D3;
+    color: #5D4037;
+    padding: 1rem 5%;
+    border-bottom: 2px solid #D7BDB9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+}
+
+/* Trỏ đến tag h1 trong header */
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* 4-5. Styling Nav (Menu ngang) */
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 0 0 20px;
+}
+
+header nav ul li a {
+    color: #5D4037;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    color: #8B4513; /* Đổi màu khi di chuột qua (hover) */
+}
+
+#menu-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#menu-toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #5D4037;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+/* Canh giữa nội dung chính */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.gioi-thieu {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Đảm bảo ảnh responsive (co dãn theo màn hình) */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Danh sách sản phẩm (Layout Flexbox) */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Căn giữa tiêu đề "Sản phẩm của chúng tôi" */
+section#product-list h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Định dạng cho mỗi sản phẩm */
+.product-item {
+    background: #ffffff;
+    border: 1px solid #EED6D3;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item p:not(.price) {
+    flex-grow: 1;
+}
+
+/* Định dạng bên trong sản phẩm */
+.product-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #8B4513;
+}
+
+.product-item p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.product-item .price {
+    font-weight: bold;
+    color: #C85C5C;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Form liên hệ */
+.lien-he {
+    margin-top: 40px;
+}
+
+.lien-he h2 {
+    text-align: center;
+}
+
+.lien-he form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #EED6D3;
+    border-radius: 8px;
+}
+
+.lien-he form div {
+    margin-bottom: 15px;
+}
+
+.lien-he form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.lien-he form input[type="text"],
+.lien-he form input[type="email"],
+.lien-he form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.lien-he form button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.lien-he form button:hover {
+    background-color: #A0522D;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    background: #4A2E2A;
+    color: #EED6D3;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+    }
+
+    #menu-toggle-btn {
+        display: block; 
+        z-index: 300;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        background: #FFFBF7; 
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+
+    header nav.is-open {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center; 
+        margin-top: 0; 
+        padding: 10px 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .product-item {
+        flex: 1 1 100%;
+    }
+}

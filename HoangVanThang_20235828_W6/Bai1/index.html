@@ -5,13 +5,18 @@
     <meta charset="UTF-8"> <!-- Cho phép hiển thị chính xác tiếng Việt -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
     <title>Epilogue's Cake</title> <!-- Tiêu đề trang -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Bai2/styles.css"> <!-- Sử dụng styles trong file css -->
 </head>
 
 <body>
     <!-- Chứa phần nội dung giới thiệu và điều hướng chung -->
     <header>
         <h1>Epilogue Cake</h1>
+        <button id="menu-toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
             <ul>
                 <li><a href="#">Trang chủ</a></li>
@@ -60,14 +65,16 @@
             <!-- Sử dụng để thu thập thông tin từ người dùng -->
             <form id="contactForm">
                 <div>
-                    <label for="ten">Họ tên:</label> <input type="text" id="ten" name="ten" required>
+                    <label for="ten">Họ tên:</label>
+                    <input type="text" id="ten" name="ten" required placeholder="Nhập họ tên của bạn">
                 </div>
                 <div>
-                    <label for="email">Email:</label> <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="vidu@email.com">
                 </div>
                 <div>
-                    <label for="thongdiep">Thông điệp (vd: đặt hàng):</label> <textarea id="thongdiep" name="thongdiep"
-                        rows="4"></textarea>
+                    <label for="thongdiep">Thông điệp (vd: đặt hàng):</label>
+                    <textarea id="thongdiep" name="thongdiep" rows="4" placeholder="Nội dung tin nhắn của bạn..."></textarea>
                 </div>
                 <div>
                     <button type="submit">Gửi</button>

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="vi">
-
+<!-- Phần Metadata  -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epilogue's Cake</title>
+    <meta charset="UTF-8"> <!-- Cho phép hiển thị chính xác tiếng Việt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+    <title>Epilogue's Cake</title> <!-- Tiêu đề trang -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Chứa phần nội dung giới thiệu và điều hướng chung -->
     <header>
         <h1>Epilogue Cake</h1>
         <nav>
@@ -18,38 +20,44 @@
             </ul>
         </nav>
     </header>
+    <!-- Nội dung chính của trang -->
     <main>
+        <!-- Phần giới thiệu -->
         <section class="gioi-thieu">
             <h2>Ở đây có tiệm bánh mỳ ngon sắp ra mắt</h2>
             <p>Chúng tôi tự hào mang đến những ổ bánh mì tươi ngon nhất, ra lò liên tục để phục vụ quý khách.</p>
         </section>
 
+        <!-- Thành phần chứa danh sách sản phẩm -->
         <section id="product-list">
             <h2>Sản phẩm của chúng tôi</h2>
+            <!-- <article> đại diện cho một khối nội dung độc lập, có thể tự đứng riêng -->
             <article class="product-item">
-                <img src="https://placehold.co/300x200?text=Banh+Mi+Thit" alt="Bánh mì thịt nướng" style="width:100%;">
+                <img src="https://placehold.co/300x200?text=Banh+Mi+Thit" alt="Bánh mì thịt nướng">
                 <h3>Bánh mì thịt nướng</h3>
                 <p>Bánh mì truyền thống với thịt nướng thơm lừng, pate, dưa leo và rau thơm.</p>
                 <p class="price">Giá: 25.000 VNĐ</p>
             </article>
 
             <article class="product-item">
-                <img src="https://placehold.co/300x200?text=Banh+Mi+Op+La" alt="Bánh mì ốp la" style="width:100%;">
+                <img src="https://placehold.co/300x200?text=Banh+Mi+Op+La" alt="Bánh mì ốp la">
                 <h3>Bánh mì ốp la</h3>
                 <p>Hai trứng ốp la lòng đào, ăn kèm xì dầu, tương ớt và bánh mì nóng.</p>
                 <p class="price">Giá: 20.000 VNĐ</p>
             </article>
 
             <article class="product-item">
-                <img src="https://placehold.co/300x200?text=Banh+Mi+Chao" alt="Bánh mì chảo" style="width:100%;">
+                <img src="https://placehold.co/300x200?text=Banh+Mi+Chao" alt="Bánh mì chảo">
                 <h3>Bánh mì chảo</h3>
                 <p>Một phần ăn đầy đặn với pate, xúc xích, trứng và xíu mại trên chảo gang.</p>
                 <p class="price">Giá: 35.000 VNĐ</p>
             </article>
         </section>
 
+        <!-- Khu vực chứa biểu mẫu liên hệ -->
         <section class="lien-he">
             <h2>Liên hệ đặt hàng</h2>
+            <!-- Sử dụng để thu thập thông tin từ người dùng -->
             <form id="contactForm">
                 <div>
                     <label for="ten">Họ tên:</label> <input type="text" id="ten" name="ten" required>
@@ -68,11 +76,10 @@
         </section>
     </main>
 
-
+    <!-- Chứa các thông tin cuối trang cũng như bản quyền -->
     <footer>
         <p>&copy; 2025 Epilogue Cake</p>
     </footer>
-
 </body>
 
 </html>

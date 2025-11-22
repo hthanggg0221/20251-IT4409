@@ -1,0 +1,17 @@
+[
+    { 
+        "name": "Bánh mì thịt nướng", 
+        "price": 25000, 
+        "desc": "Bánh mì truyền thống với thịt nướng thơm lừng, pate, dưa leo và rau thơm." 
+    },
+    { 
+        "name": "Bánh mì ốp la", 
+        "price": 20000, 
+        "desc": "Hai trứng ốp la lòng đào, ăn kèm xì dầu, tương ớt và bánh mì nóng." 
+    },
+    { 
+        "name": "Bánh mì chảo", 
+        "price": 35000, 
+        "desc": "Một phần ăn đầy đủ với pate, xúc xích, trứng và xíu mại trên chảo gang." 
+    }
+]
